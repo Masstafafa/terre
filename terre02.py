@@ -10,7 +10,7 @@ solide
 
 import sys
 
-words = sys.argv[1:]
+sentence = sys.argv[1:]
 
 for words in sys.argv[1:]:
     print(words)
