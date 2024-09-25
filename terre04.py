@@ -1,17 +1,19 @@
 import sys
 
-if len(sys.argv) < 2:
-    print("Tu ne me la mettras pas à l’envers.")
-    sys.exit(0)
+arguments = sys.argv[1:]
+print(arguments)
 
-user_choice = sys.argv[1]
-
-if not user_choice.isdigit():
+if not arguments:
     print("Tu ne me la mettras pas à l’envers.")
-elif int(user_choice) % 2 == 0:
+    sys.exit()
+
+if not arguments[0].isdigit():
+    print("Tu ne me la mettras pas à l’envers.")
+    sys.exit()
+
+number = int(arguments[0])
+
+if number % 2 == 0:
     print("pair\n")
-elif int(user_choice) % 2 != 0:
+else:
     print("impair\n")
-
-
-

@@ -1,9 +1,11 @@
 import sys
 
-choice_letter = sys.argv[1]
+letters = sys.argv[1:]
 
-for letter in range(ord(choice_letter), ord('z') + 1):
-    print(chr(letter), end='')
-
+for letter in letters:
+    print(letter)
+    ascii_value = ord(letter)
+    
+for ascii_code in range(ascii_value, 123):
+    print(chr(ascii_code), end='')
 print()
-        
