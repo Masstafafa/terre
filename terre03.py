@@ -1,11 +1,10 @@
 import sys
 
-letters = sys.argv[1:]
+arguments = sys.argv[1:]
+letter = arguments[0]
+letter_ascii = ord(arguments[0])
 
-for letter in letters:
-    print(letter)
-    ascii_value = ord(letter)
-    
-for ascii_code in range(ascii_value, 123):
-    print(chr(ascii_code), end='')
+   
+for letter_ascii in range(letter_ascii, 123):
+    print(chr(letter_ascii), end='')
 print()
