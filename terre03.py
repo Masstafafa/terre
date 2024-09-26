@@ -1,7 +1,6 @@
 import sys
 
 arguments = sys.argv[1:]
-letter = arguments[0]
 letter_ascii = ord(arguments[0])
 
    
