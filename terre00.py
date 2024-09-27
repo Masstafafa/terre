@@ -5,6 +5,3 @@
 for alphabet in range (97, 122 + 1):
     print(chr(alphabet), end="")
 print()
-
-for choice_letter in alphabet:
-    print(choice_letter)
