@@ -1,19 +1,13 @@
 import sys
 
 arguments = sys.argv[1:]
-#dividend = int(arguments[0])
-#divisor = int(arguments[1])
 
 if len(arguments) != 2:
     print("erreur.")
     sys.exit()
 
-try:
-    dividend = int(arguments[0])
-    divisor = int(arguments[1])
-except ValueError:
-    print("erreur: les arguments doivent être des entiers.")
-    sys.exit()
+dividend = int(arguments[0])
+divisor = int(arguments[1])
 
 if divisor == 0:
     print("erreur.")
@@ -22,9 +16,8 @@ if dividend < divisor:
     print("erreur.")
     sys.exit()
 
-#rest = int(dividend % divisor)
-#result = int(dividend / divisor)
+rest = (dividend % divisor)
+result = (dividend / divisor)
 
-
-print(f"résultat: {result}")
+print(f"résultat: {int(result)}")
 print(f"reste: {rest}")
