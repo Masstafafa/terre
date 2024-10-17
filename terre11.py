@@ -12,7 +12,7 @@ full_hour = arguments[0]
 
 time_regex = "^[0-2][0-3]:[0-5][0-9]$"
 
-if not re.match("^[0-2][0-3]:[0-5][0-9]$", full_hour):
+if not re.match(time_regex, full_hour):
     print("Erreur : l'heure ne peut être comprise qu'entre O et 24"
           " les minutes ne peuvent être comprise qu'entre O et 59")
     sys.exit()
