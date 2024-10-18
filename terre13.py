@@ -14,8 +14,8 @@ number_1 = int(arguments[0])
 number_2 = int(arguments[1])
 number_3 = int(arguments[2])
 
-if number_1 == number_2 == number_3:
-    print("Erreur, merci d'indiquer des chiffres différents")
+if number_1 == number_2 or number_1 == number_3 or number_2 == number_3:
+    print("Erreur, les arguments doivent être des chiffres différents")
 
 if number_2 < number_1 < number_3:
     print(number_1)
@@ -23,3 +23,4 @@ elif number_1 < number_2 < number_3:
     print(number_2)
 elif number_1 < number_3 < number_2:
     print(number_3)
+
